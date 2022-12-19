@@ -10,8 +10,8 @@ Console.Write("Введите число А ");
 int numberA = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число B ");
 int numberB = Convert.ToInt32(Console.ReadLine());
-int product = numberB * numberB;
-if (product == numberA)
+int square = numberB * numberB;
+if (square == numberA)
 {
 Console.WriteLine($"Ваше число А ({numberA}) равно квадрату числа B ({numberB})");  
 }
