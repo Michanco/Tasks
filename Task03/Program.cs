@@ -4,7 +4,7 @@
 5 -> Пятница*/
 
 Console.WriteLine("Введите номер дня недели от 1 до 7, а я попробую угадать его название");
-string number = (Console.ReadLine());
+string number = Console.ReadLine();
 if (number == "1") Console.WriteLine("Вы загадали понедельник");
 else if (number == "2") Console.WriteLine("Вы загадали вторник");
 else if (number == "3") Console.WriteLine("Вы загадали среда");
