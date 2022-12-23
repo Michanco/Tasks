@@ -22,8 +22,19 @@ Console.WriteLine($"Наибольшая цифра числа ==> {maxDigit}");
 
 int MaxDigit(int number)
 {
-    int firstDigit = number / 10;
-    int secondDigit = number % 10;
+    int firstDigit = Math.Abs(number) / 10;
+    int secondDigit = Math.Abs(number) % 10;
     int result = firstDigit > secondDigit ? firstDigit : secondDigit;
     return result;
 }
+
+Console.Write("Теперь вы введите двухзначное число  ");
+int number1 = Convert.ToInt32(Console.ReadLine());
+
+if ( Math.Abs(number1) > 9 && Math.Abs(number1) < 100 ) 
+{
+    int maxDigit1 = MaxDigit(number1);
+    Console.WriteLine($"Наибольшая цифра числа ==> {maxDigit1}");
+}    
+else  Console.WriteLine("Ваше число не двухзначное");
+    
