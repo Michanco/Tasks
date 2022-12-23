@@ -9,7 +9,10 @@ Console.Write("Введите число А  ");
 int numberA = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число В  ");
 int numberB = Convert.ToInt32(Console.ReadLine());
-
-int quot = numberA % numberB;
-if (quot == 0) Console.WriteLine("Кратно");
-else Console.WriteLine($"Не кратно, остаток {quot}");
+if (numberA > numberB)
+{
+    int quot = numberA % numberB;
+    if (quot == 0) Console.WriteLine("Кратно");
+    else Console.WriteLine($"Не кратно, остаток {quot}");
+}
+else Console.WriteLine("Ничего не получится");
