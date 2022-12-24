@@ -11,8 +11,8 @@ Console.Write("Введите число В  ");
 int numberB = Convert.ToInt32(Console.ReadLine());
 if (numberA > numberB)
 {
-    int quot = numberA % numberB;
-    if (quot == 0) Console.WriteLine("Кратно");
-    else Console.WriteLine($"Не кратно, остаток {quot}");
+    bool quot =  numberA % numberB == 0;                                   //int quot = numberA % numberB;
+    if (quot) Console.WriteLine("Кратно");                                 //if (quot == 0) Console.WriteLine("Кратно");
+    else Console.WriteLine($"Не кратно, остаток {numberA % numberB}");     //else Console.WriteLine($"Не кратно, остаток {quot}");
 }
 else Console.WriteLine("Ничего не получится");
