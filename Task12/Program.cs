@@ -19,8 +19,9 @@ int Remainder(int num1, int num2)
 if (numberA > numberB)
 {
     int remain = Remainder(numberA, numberB);
-    if (remain == 0) Console.WriteLine("Кратно");
-    else Console.WriteLine($"Не кратно, остаток {remain}");
+    Console.WriteLine(remain == 0 ? "Кратно" : $"Не кратно, остаток {remain}");
+    //if (remain == 0) Console.WriteLine("Кратно");
+    //else Console.WriteLine($"Не кратно, остаток {remain}");
 
 }
 // ver1
