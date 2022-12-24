@@ -9,10 +9,31 @@ Console.Write("Введите число А  ");
 int numberA = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число В  ");
 int numberB = Convert.ToInt32(Console.ReadLine());
+
+int Remainder(int num1, int num2)
+{
+    int res = num1 % num2;
+    return (res);
+}
+
 if (numberA > numberB)
 {
-    bool quot =  numberA % numberB == 0;                                   //int quot = numberA % numberB;
-    if (quot) Console.WriteLine("Кратно");                                 //if (quot == 0) Console.WriteLine("Кратно");
-    else Console.WriteLine($"Не кратно, остаток {numberA % numberB}");     //else Console.WriteLine($"Не кратно, остаток {quot}");
+    int remain = Remainder(numberA, numberB);
+    if (remain == 0) Console.WriteLine("Кратно");
+    else Console.WriteLine($"Не кратно, остаток {remain}");
+
 }
+// ver1
+//int remain = numberA % numberB;
+//if (remain == 0) Console.WriteLine("Кратно");
+//else Console.WriteLine($"Не кратно, остаток {remain}");
+
+// ver2
+// {
+//     bool remain =  numberA % numberB == 0;                                   
+//     if (remain) Console.WriteLine("Кратно");                                
+//     else Console.WriteLine($"Не кратно, остаток {numberA % numberB}");     
+// }
+
+
 else Console.WriteLine("Ничего не получится");
