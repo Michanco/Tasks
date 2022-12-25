@@ -10,8 +10,7 @@ Console.WriteLine("Введите номер дня недели от 1 до 7")
 int numberA = Convert.ToInt32(Console.ReadLine());
 if (numberA < 8 && numberA > 0)
 {
-    if (numberA == 6 || numberA == 7) Console.WriteLine("Выходной");
-    else Console.WriteLine("Рабочий");
+    Console.WriteLine(numberA == 6 || numberA == 7 ? "Выходной" : "Рабочий");
 }
 else
 {
