@@ -31,5 +31,5 @@ double Distance(int x1, int y1, int z1, int x2, int y2, int z2)
     int leg2 = y1 - y2;
     int leg3 = z1 - z2;
     double distance2 = Math.Sqrt((leg1 * leg1) + (leg2 * leg2) + (leg3 * leg3));
-    return (distance2);
+    return distance2;
 }
