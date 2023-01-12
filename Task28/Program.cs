@@ -10,12 +10,15 @@ int number = Convert.ToInt32(Console.ReadLine());
 int factorial = Factorial(number);
 Console.WriteLine($" Произведение чисел от 1 до {number} равно {factorial}");
 
-int Factorial (int num)
+int Factorial(int num)
 {
     int fact = 1;
     for (int i = 1; i <= num; i++)
     {
-        fact *= i;
+        checked
+        {
+            fact *= i;
+        }
     }
     return fact;
 }
