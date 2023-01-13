@@ -14,13 +14,14 @@ Console.WriteLine($"{number} -> {sumDigit}");
 
 int SumDigit(int num)
 {
+    num = Math.Abs(num);
     int sum = 0;
     int dig = 0;
     while (num > 0) 
     {
         dig = num % 10;
         num /= 10;
-        sum = sum + dig;
+        sum += dig;
     }   
     return sum;
 }
