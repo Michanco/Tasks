@@ -17,6 +17,7 @@ int SumDigit(int num)
     num = Math.Abs(num);
     int sum = 0;
     int dig = 0;
+
     while (num > 0) 
     {
         dig = num % 10;
