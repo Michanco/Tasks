@@ -22,7 +22,10 @@ int Exponent(int num, int deg)
     int num1 = 1;
     for (int i = 1; i <= deg; i++)
     {
-        num1 *= num ;
+        checked
+        {
+            num1 *= num;
+        }
     }
     return num1;
 }
