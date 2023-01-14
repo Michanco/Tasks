@@ -10,7 +10,7 @@ Console.WriteLine("Введите целое число");
 int number = Convert.ToInt32(Console.ReadLine());
 
 int sumDigit = SumDigit(number);
-Console.WriteLine($"{number} -> {sumDigit}");
+Console.WriteLine($"Сумма цифр числа {number} равна {sumDigit}");
 
 int SumDigit(int num)
 {
