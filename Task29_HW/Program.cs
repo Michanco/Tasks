@@ -22,13 +22,12 @@ int[] NewArray(int min1, int max1, int size)
     }
     return arr;
 }
-
 void PrintArray(int[] arr)
 {
     Console.Write("[ ");
     for (int i = 0; i < arr.Length -1; i++)
-    {
-        Console.Write(arr[i] + ", ");
+    { 
+         Console.Write(arr[i] + ", ");
     }
     Console.Write(arr[arr.Length -1] + " ]");
 }
