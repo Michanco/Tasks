@@ -6,7 +6,7 @@
 Console.WriteLine("Введите число которое будем искать в массиве");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int[] array = NewArray(-10, 10, 10);
+int[] array = NewArrayRndInt(-10, 10, 10);
 Console.Write($"{number}; массив ");
 PrintArray (array);
 Console.Write( GetNumInArray(array, number) ? " -> Да " : " -> Нет");
@@ -20,7 +20,7 @@ bool GetNumInArray(int[] arr, int num)
     return false;
 }
 
-int[] NewArray(int min1, int max1, int size)
+int[] NewArrayRndInt(int min1, int max1, int size)
 {
 
     int[] arr = new int[size];
