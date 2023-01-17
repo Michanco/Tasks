@@ -6,7 +6,7 @@
 
 // [345, 897, 568, 234] -> 2
 
-int[] array = NewArrayRndInt(100, 1000, 12);
+int[] array = NewArrayRndInt(100, 999, 12);
 PrintArray(array);
 int honElementsOfArray = HonElementsOfArray(array);
 Console.Write($" -> {honElementsOfArray}");
@@ -28,7 +28,7 @@ int[] NewArrayRndInt(int min1, int max1, int size)
     Random rnd = new Random();
     for (int i = 0; i < size; i++)
     {
-        arr[i] = rnd.Next(min1, max1);
+        arr[i] = rnd.Next(min1, max1 + 1);
     }
     return arr;
 }
