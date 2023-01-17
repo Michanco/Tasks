@@ -28,7 +28,6 @@ int[] ProductPairsOfElementsArray(int[] arr)
 
 int[] NewArray(int min1, int max1, int size)
 {
-
     int[] arr = new int[size];
     Random rnd = new Random();
     for (int i = 0; i < size; i++)
