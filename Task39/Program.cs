@@ -40,7 +40,7 @@ void ReverseArrayNew(int[] arr)
     }
 }
 
-// ReverseArrayVersion2(int[] array)
+// void ReverseArrayVersion2(int[] array)
 // {
 //     int index1 = 0;
 //     int index2 = array.Length - 1;
