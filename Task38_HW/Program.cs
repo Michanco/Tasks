@@ -8,7 +8,7 @@ double[] array = NewArrayRndDouble(-100, 100, 10);
 PrintArrayDbl(array);
 double minArr = MinElementOfDblArray(array);
 double maxArr = MaxElementOfDblArray(array);
-double diffMinMax = Math.Abs(maxArr - minArr);
+double diffMinMax = maxArr - minArr;
 diffMinMax = Math.Round(diffMinMax, 1);
 Console.Write($" -> {diffMinMax}");
 
