@@ -8,10 +8,10 @@ Console.WriteLine("Введите количество чисел");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] array = InputArray(size);
 PrintArray(array);
-int negativeCount = NegativeCount(array);
-Console.WriteLine($" -> {negativeCount}");
+int positiveCount = PositiveCount(array);
+Console.WriteLine($" -> {positiveCount}");
 
-int NegativeCount(int[] arr)
+int PositiveCount(int[] arr)
 {
     int count = 0;
     for (int i = 0; i < arr.Length; i++)
