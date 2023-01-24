@@ -7,8 +7,8 @@ int[] array2 = CopyArray(array1);
 PrintArray(array1);
 PrintArray(array2);
 
-
 int[] CopyArray(int[] arr)
+
 {
     int[] arr2 = new int[arr.Length];
     for (int i = 0; i < arr.Length; i++)
