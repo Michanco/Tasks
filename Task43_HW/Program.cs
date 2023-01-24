@@ -6,7 +6,7 @@
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
 //  Координата Х точки пересечения x=(b2-b1)/(k1-k2)
-//  Координата Y точки пересечения y=(k1*b2-k1*b1)/(k1-k2)+b1
+//  Координата Y точки пересечения y=k1(b2-b1)/(k1-k2)+b1
 
 
 
@@ -27,7 +27,7 @@ else
 {
     double xCrossCoordinate = XCrossCoordinate(k1, b1, k2, b2);
     xCrossCoordinate = Math.Round(xCrossCoordinate, 2);
-    double yCrossCoordinate = YCrossCoordinate(k1, b1, k2, b2);
+    double yCrossCoordinate = YCrossCoordinate(xCrossCoordinate, k2, b2);
     yCrossCoordinate = Math.Round(yCrossCoordinate, 2);
     Console.WriteLine($" Прямые пересекаются в точке ( {xCrossCoordinate}; {yCrossCoordinate} )");
 }
@@ -39,9 +39,9 @@ double XCrossCoordinate(double k10, double b10, double k20, double b20)
     return xCoord;
 }
 
-double YCrossCoordinate(double k10, double b10, double k20, double b20)
+double YCrossCoordinate(double xC, double k20, double b20)
 {
-    double yCoord = (k1 * b2 - k1 * b1) / (k1 - k2) + b1;
+    double yCoord = k20 * xC + b20;
     yCoord = Math.Round(yCoord, 2);
     return yCoord;
 }
