@@ -66,6 +66,6 @@ void PrintArray(double[] arr)
     {
         Console.Write($"{arr[i], 5};");
     }
-    Console.Write($"{arr[arr.Length - 1], 5}");
+    Console.Write($"{arr[arr.Length - 1], 5}.");
     Console.WriteLine();
 }
