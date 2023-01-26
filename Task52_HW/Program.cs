@@ -6,9 +6,9 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-int[,] masterMatrix = NewMatrixRndInt(4, 4, 0, 9);
+int[,] masterMatrix = NewMatrixRndInt(3, 5, 0, 9);
 PrintMatrix(masterMatrix);
-Console.Write("Среднее арифметическое каждого столбца");
+Console.Write("Среднее арифметическое каждого столбца: ");
 double[] columnsAverage = ColumnsAverage(masterMatrix);
 PrintArray(columnsAverage);
 
