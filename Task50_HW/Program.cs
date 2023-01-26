@@ -9,7 +9,7 @@
 
 int[] matrixSize = RandomMatrixSize(2, 10);
 int[,] luckyMatrix = NewMatrixRndInt(matrixSize[0], matrixSize[1], 0, 9);
-Console.WriteLine("Введите индексы элемента масссива от'1' до ' 10 ");
+Console.WriteLine("Введите индексы элемента масссива от 1 до  10 ");
 Console.Write(" № строки :");
 int rowsLM = Convert.ToInt32(Console.ReadLine());
 Console.Write(" № столбца :");
