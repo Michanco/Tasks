@@ -5,7 +5,7 @@
 // 11 16 15 06
 // 10 09 08 07
 
-int[,] masterMatrix = new int[25, 18];
+int[,] masterMatrix = new int[4, 4];
 NewSpiralMatrix(masterMatrix);
 PrintMatrix(masterMatrix);
 
