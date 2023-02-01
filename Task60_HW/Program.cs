@@ -7,10 +7,7 @@
 
 int[,,] masterArray3D = NewArray3DInt2Digit(10, 5, 2);
 if (True2Digit(masterArray3D))
-{
 Console.WriteLine("Для заполнения матрицы такого размера не хватило не повторяющихся двухзначных чисел");
-PrintArray3DIndexs(masterArray3D);
-}
 else PrintArray3DIndexs(masterArray3D);
 
 bool True2Digit(int[,,] arr3D)
