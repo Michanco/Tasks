@@ -2,12 +2,16 @@
 // m = 2, n = 3 -> A(m,n) = 9
 // m = 3, n = 2 -> A(m,n) = 29
 
-Console.WriteLine("Введите число m: ");
+Console.WriteLine("Введите неотрицательное число m: ");
 int numM = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число n: ");
+Console.WriteLine("Введите неотрицательное число n: ");
 int numN = Convert.ToInt32(Console.ReadLine());
-int akkerman = Akkerman(numM, numN);
-Console.WriteLine($" m = {numM}, n = {numN} -> A(m, n) = {akkerman}");
+if (numM < 0 || numN < 0) Console.WriteLine("Одно из чисел отрицательное");
+else
+{
+    int akkerman = Akkerman(numM, numN);
+    Console.WriteLine($" m = {numM}, n = {numN} -> A(m, n) = {akkerman}");
+}
 
 int Akkerman(int m, int n)
 {
