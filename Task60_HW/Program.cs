@@ -5,7 +5,7 @@
 // 66(0,0,0) 27(0,0,1) 25(0,1,0) 90(0,1,1)
 // 34(1,0,0) 26(1,0,1) 41(1,1,0) 55(1,1,1)
 
-int[,,] masterArray3D = NewArray3DInt2Digit(10, 5, 2);
+int[,,] masterArray3D = NewArray3DInt2Digit(5, 5, 2);
 if (True2Digit(masterArray3D))
 Console.WriteLine("Для заполнения матрицы такого размера не хватило не повторяющихся двухзначных чисел");
 else PrintArray3DIndexs(masterArray3D);
